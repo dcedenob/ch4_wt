@@ -11,7 +11,9 @@ class MoviesController < ApplicationController
   end
   
   def new
-    # default: render 'new' template
+      @movie = Movie.new
+      # default: render 'new' template
+
   end
 
   def create
